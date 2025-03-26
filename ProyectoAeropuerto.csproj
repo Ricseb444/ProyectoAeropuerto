@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{324E02BF-2508-4B8C-AF51-16ABD0F0369A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoAeropuerto</RootNamespace>
+    <AssemblyName>ProyectoAeropuerto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BMO_ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscarF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarF.Designer.cs">
+      <DependentUpon>BuscarF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAlert.Designer.cs">
+      <DependentUpon>FAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetodoAsientosB.cs" />
+    <Compile Include="MetodoAsientosC.cs" />
+    <Compile Include="MetodoAsientosA.cs" />
+    <Compile Include="Finicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finicio.Designer.cs">
+      <DependentUpon>Finicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuscarF.resx">
+      <DependentUpon>BuscarF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlert.resx">
+      <DependentUpon>FAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finicio.resx">
+      <DependentUpon>Finicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\MetodoAsientosA.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_4405568.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5592748.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-back-vector-icon-png-image_470452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\251451-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BMO_ICON.ico" />
+    <None Include="Resources\ShowVar.png" />
+    <None Include="Resources\Add_2.png" />
+    <None Include="Resources\Add_1.png" />
+    <None Include="Resources\Search_1.png" />
+    <None Include="Resources\Menu_2.png" />
+    <None Include="Resources\Menu_1.png" />
+    <None Include="Resources\Power Off Button_2.png" />
+    <None Include="Resources\Power Off Button_1.png" />
+    <None Include="Resources\Ok_2.png" />
+    <None Include="Resources\Ok_1.png" />
+    <None Include="Resources\Cancel_1.png" />
+    <None Include="Resources\Cancel_2.png" />
+    <None Include="Resources\Plus_2.png" />
+    <None Include="Resources\Plus_1.png" />
+    <None Include="Resources\Search_2.png" />
+    <None Include="Resources\Warning Shield.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\Sad Cloud.png" />
+    <None Include="Resources\Penguin2.png" />
+    <None Include="Resources\Info2.png" />
+    <None Include="Resources\Info1.png" />
+    <None Include="Resources\Menu2.png" />
+    <None Include="Resources\Cancel2.png" />
+    <None Include="Resources\Power Off Button2.png" />
+    <None Include="Resources\Search2.png" />
+    <None Include="Resources\Add2.png" />
+    <None Include="Resources\Ok2.png" />
+    <None Include="Resources\Home2.png" />
+    <None Include="Resources\Home1.png" />
+    <None Include="Resources\Search1.png" />
+    <None Include="Resources\Menu1.png" />
+    <None Include="Resources\Add1.png" />
+    <None Include="Resources\Ok1.png" />
+    <None Include="Resources\Cancel1.png" />
+    <None Include="Resources\Power Off Button.png" />
+    <None Include="Resources\Ok.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Bookmark.png" />
+    <None Include="Resources\BookmarkGreen.png" />
+    <None Include="Resources\Shutdown.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Checkmark.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\106936-grey-abstract.jpg" />
+    <None Include="Resources\awriuwy50.png" />
+    <None Include="Resources\Cancelar.png" />
+    <None Include="Resources\Reservar.png" />
+    <None Include="Resources\ALibres.png" />
+    <None Include="Resources\Buscar.png" />
+    <None Include="Resources\3452345sdf.png" />
+    <None Include="Resources\234562456.png" />
+    <None Include="Resources\45353785.png" />
+    <None Include="Resources\7528757.png" />
+    <None Include="Resources\r6747it56.png" />
+    <None Include="Resources\6846546546.png" />
+    <None Include="Resources\6854654.png" />
+    <None Include="Resources\btnBlack.png" />
+    <None Include="Resources\pngwing.com %28101%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BLL\BLL.csproj">
+      <Project>{91120270-3531-4321-ac80-81f4f715c94a}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="DAL\DAL.csproj">
+      <Project>{cb543284-25ac-48f0-86cd-b555aedc49e5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="DEL\DEL.csproj">
+      <Project>{56f28a73-0a4c-45b7-b360-814dca82f83d}</Project>
+      <Name>DEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
