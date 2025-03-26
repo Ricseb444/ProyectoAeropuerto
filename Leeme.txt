@@ -1,1 +1,1 @@
-Para poder ejecutar este proyecto se necesita restaurar la base de datos Mis_hoteles con SQL Server. El .bak para la restauración viene adjunto en este proyecto
+Para poder ejecutar este proyecto se necesita restaurar la base de datos pasajeroAvion con SQL Server. El .bak para la restauración viene adjunto en este proyecto
